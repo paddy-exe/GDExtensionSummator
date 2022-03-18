@@ -47,6 +47,7 @@ func _ready() -> void:
 	s.add(20)
 	s.add(30)
 	print(s.get_total())
+    # outputs 60 in the console
 	s.reset()
 ```
 
