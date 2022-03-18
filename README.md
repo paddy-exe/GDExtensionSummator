@@ -1,6 +1,7 @@
 # GDExtensionSummator
 
 This repository is for showcasing the new GDExtension system in Godot 4.
+The C++ code is from the [Custom modules example](https://docs.godotengine.org/en/latest/development/cpp/custom_modules_in_cpp.html "Click to get to the docs") of the Godot docs.
 
 ## Versioning
 This repository was created with Godot v4.0.alpha.custom_build [622806397]. To build the extension succesfully, please make sure to use this or a newer version built from the master branch.
