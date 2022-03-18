@@ -1,6 +1,14 @@
+<<<<<<< refs/remotes/origin/main
 [gd_scene load_steps=2 format=3 uid="uid://dgm4ah3j8jxke"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ptcg0"]
 
 [node name="Main" type="Node"]
 script = ExtResource( "1_ptcg0" )
+=======
+[gd_scene format=3 uid="uid://dgm4ah3j8jxke"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ptcg0"]
+
+[node name="Main" type="Node"]
+>>>>>>> Add folders to separate the the game from the extension and godot-cpp. Rename paths in gdextension file Change output library path in SConstruct Delete libraries from the game/bin/platform_name directory to add this folder to .gitignore Add game/bin/plafrorm_name folder to .gitignore Delete .sconsing.dblite file Add .sconsign*.dblite to .gitignore Delete binary files Add binary files to .gitignore Fix: register types function name. Add a node for testing and remove the use of namespaces (it is still used in _bind_methods)
