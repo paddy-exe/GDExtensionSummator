@@ -4,4 +4,4 @@
 void register_summator_types();
 void unregister_summator_types();
 
-#endif // ! SUMMATOR_REGISTER_TYPES_H
+#endif // SUMMATOR_REGISTER_TYPES_H

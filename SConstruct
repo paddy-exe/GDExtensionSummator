@@ -13,19 +13,19 @@ env = SConscript("godot-cpp/SConstruct")
 # - LINKFLAGS are for linking flags
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
-env.Append(CPPPATH=["src/"])
-sources = Glob("src/*.cpp")
+env.Append(CPPPATH=["extension/src/"])
+sources = Glob("extension/src/*.cpp")
 
 if env["platform"] == "osx":
     library = env.SharedLibrary(
-        "bin/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
+        "game/bin/plaftorm_name/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
     )
 else:
     library = env.SharedLibrary(
-        "bin/libgdsummator.{}.{}.{}{}".format(
+        "game/bin/plaftorm_name/libgdsummator.{}.{}.{}{}".format(
             env["platform"], env["target"], env["arch_suffix"], env["SHLIBSUFFIX"]
         ),
         source=sources,
