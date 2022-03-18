@@ -7,15 +7,13 @@
 #include <windows.h>
 #endif
 
-#include <godot_cpp/classes/global_constants.hpp>
-#include <godot_cpp/core/binder_common.hpp>
-#include <godot_cpp/classes/control.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
 #include <godot-cpp/include/godot_cpp/classes/ref.hpp>
 
-class Summator : public godot::RefCounted
+using namespace godot;
+
+class Summator : public RefCounted
 {
-    GDCLASS(Summator, godot::RefCounted);
+    GDCLASS(Summator, RefCounted);
 
     int count;
 

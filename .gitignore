@@ -21,3 +21,4 @@ bin
 *.files
 *.includes
 *.idb
+*.exp
