@@ -4,9 +4,9 @@ entry_symbol = "summator_library_init"
 
 [libraries]
 
-linux.64.debug = "plaftorm_name/libgdsummator.linux.debug.64.so"
-linux.64.release = "plaftorm_name/libgdsummator.linux.release.64.so"
-windows.64.debug = "plaftorm_name/libgdsummator.windows.debug.64.dll"
-windows.64.release = "plaftorm_name/libgdsummator.windows.release.64.dll"
-macos.debug = "plaftorm_name/libgdsummator.osx.debug.framework"
-macos.release = "plaftorm_name/libgdsummator.osx.release.framework"
+linux.64.debug = "summator/libgdsummator.linux.debug.64.so"
+linux.64.release = "summator/libgdsummator.linux.release.64.so"
+windows.64.debug = "summator/libgdsummator.windows.debug.64.dll"
+windows.64.release = "summator/libgdsummator.windows.release.64.dll"
+macos.debug = "summator/libgdsummator.osx.debug.framework"
+macos.release = "summator/libgdsummator.osx.release.framework"

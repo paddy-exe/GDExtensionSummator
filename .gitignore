@@ -1,7 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 .vscode/
-game/bin/plaftorm_name/*
+game/bin/summator/*
 .sconsign*.dblite
 
 # Binaries

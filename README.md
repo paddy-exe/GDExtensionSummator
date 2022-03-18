@@ -12,28 +12,37 @@ If you can't compile the extension, please open an issue with the error log in y
 ## Getting started / Building the extension
 To compile the extension you need to follow these steps:
 
-1. Make sure you are in the top level of the repository
+0. Click on the green "Use this template" button to generate the repository for you
+
+1. Clone the extension recursively from this repository
+```bash
+# --recursive to automatically load the submodule godot-cpp
+# The git adress can be found under the green "Code" dropdown menu
+git clone --recursive (--GITHUB ADRESS--)
+```
+
+2. Make sure you are in the top level of the repository
 ```bash
 pwd
 .../GDExtensionSummator
 ```
 
-2. Go inside the godot-cpp folder
+3. Go inside the godot-cpp folder
 ```bash
 cd godot-cpp
 ```
 
-3. Compile godot-cpp and generate bindings
+4. Compile godot-cpp and generate bindings
 ```bash
 scons target=debug generate_bindings=yes
 ```
 
-4. Go back to the top level of the directory
+5. Go back to the top level of the directory
 ```bash
 cd ..
 ```
 
-5. Compile the extension
+6. Compile the extension
 ```bash
 scons target=debug
 ```
@@ -47,7 +56,7 @@ func _ready() -> void:
 	s.add(20)
 	s.add(30)
 	print(s.get_total())
-    # outputs 60 in the console
+        # outputs 60 in the console
 	s.reset()
 ```
 

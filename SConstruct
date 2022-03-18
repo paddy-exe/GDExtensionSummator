@@ -18,14 +18,14 @@ sources = Glob("extension/src/*.cpp")
 
 if env["platform"] == "osx":
     library = env.SharedLibrary(
-        "game/bin/plaftorm_name/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
+        "game/bin/summator/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
     )
 else:
     library = env.SharedLibrary(
-        "game/bin/plaftorm_name/libgdsummator.{}.{}.{}{}".format(
+        "game/bin/summator/libgdsummator.{}.{}.{}{}".format(
             env["platform"], env["target"], env["arch_suffix"], env["SHLIBSUFFIX"]
         ),
         source=sources,
