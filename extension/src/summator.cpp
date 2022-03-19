@@ -1,3 +1,4 @@
+//© Copyright 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 #include "summator.h"
 
 #include <godot_cpp/core/class_db.hpp>
