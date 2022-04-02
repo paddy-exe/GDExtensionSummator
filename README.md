@@ -6,7 +6,7 @@ The C++ code is from the [Custom modules example](https://docs.godotengine.org/e
 -> **Feel free to use this repository as a template for your GDExtensions**
 
 ## Versioning
-This repository was created with Godot v4.0.alpha.custom_build [622806397]. To build the extension succesfully, please make sure to use this or a newer version built from the master branch.
+This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
 
 ## Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal
