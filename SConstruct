@@ -41,7 +41,7 @@ env = SConscript("godot-cpp/SConstruct")
 env.Append(CPPPATH=["extension/src/"])
 sources = Glob("extension/src/*.cpp")
 
-if env["platform"] == "osx":
+if env["platform"] == "macos":
     library = env.SharedLibrary(
         "game/bin/summator/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]

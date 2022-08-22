@@ -3,4 +3,4 @@
 [ext_resource type="Script" path="res://main.gd" id="1_ptcg0"]
 
 [node name="Main" type="Node"]
-script = ExtResource( "1_ptcg0" )
+script = ExtResource("1_ptcg0")
