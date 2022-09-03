@@ -1,6 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
-.vscode/
 game/bin/summator/*
 .sconsign*.dblite
 

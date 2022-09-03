@@ -1,0 +1,81 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "godot-cpp-dir",
+            "type": "shell",
+            "command": "cd godot-cpp",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "build-godot-cpp",
+            "type": "shell",
+            "command": "scons target=debug generate_bindings=yes",
+            "dependsOrder": "sequence",
+            "dependsOn":["godot-cpp-dir"],
+            "presentation": {
+                "echo": true,
+                "revealProblems": "onProblem",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "top-level-dir",
+            "type": "shell",
+            "command": "cd ..",
+            "dependsOrder": "sequence",
+            "dependsOn":["godot-cpp-dir", "build-godot-cpp"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "initial-build-extension",
+            "type": "shell",
+            "command": "scons target=debug",
+            "dependsOrder": "sequence",
+            "dependsOn":["godot-cpp-dir", "build-godot-cpp", "top-level-dir"],
+            "presentation": {
+                "echo": true,
+                "revealProblems": "onProblem",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-extension",
+            "type": "shell",
+            "command": "scons target=debug",
+            "presentation": {
+                "echo": true,
+                "revealProblems": "onProblem",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

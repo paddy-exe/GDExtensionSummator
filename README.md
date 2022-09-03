@@ -8,7 +8,7 @@ The C++ code is from the [Custom modules example](https://docs.godotengine.org/e
 ## Versioning
 This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
 
-**Most Recent Update: Godot 4 Alpha 14* working*  
+**Most Recent Update: Godot 4 Alpha 15* working*
 
 ## Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
@@ -16,6 +16,12 @@ If you can't compile the extension, please open an issue with the error log in y
 PRs for improvements are very welcome!
 
 ## Getting started / Building the extension
+
+### VSCode Compilation (only applicable if you are using VSCode as your code editor)
+For the initial build you can run the vscode task `initial-build-extension`. This compiles both godot-cpp and the extension. For all subsequent builds, you only need to run the task `build-extension`.
+
+### Manual Compilation
+
 To compile the extension you need to follow these steps:
 
 0. Click on the green "Use this template" button to generate the repository for you
@@ -38,7 +44,7 @@ pwd
 cd godot-cpp
 ```
 
-4. Compile godot-cpp and generate bindings
+4. Compile godot-cpp and generate bindings (only need to do this once when starting development or when there is an update of the submodule)
 ```bash
 scons target=debug generate_bindings=yes
 ```
