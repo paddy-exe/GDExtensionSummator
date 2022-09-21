@@ -8,7 +8,7 @@ The C++ code is from the [Custom modules example](https://docs.godotengine.org/e
 ## Versioning
 This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
 
-**Most Recent Update: Godot 4 Alpha 15* working*
+**Most Recent Update: Godot 4 Beta 1 working (tested on Windows and Mac)*
 
 ## Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
