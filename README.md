@@ -3,12 +3,12 @@
 This repository is for showcasing the new GDExtension system in Godot 4.
 The C++ code is from the [Custom modules example](https://docs.godotengine.org/en/latest/development/cpp/custom_modules_in_cpp.html "Click to get to the docs") of the Godot docs.
 
--> **Feel free to use this repository as a template for your GDExtensions**
+----> **Feel free to use this repository as a template for your GDExtensions**
 
 ## Versioning
 This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
 
-**Most Recent Update: Godot 4 Beta 1 working (tested on Windows and Mac)*
+----> **Most Recent Update: Godot 4 Beta 2 working**
 
 ## Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
