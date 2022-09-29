@@ -12,5 +12,5 @@ config_version=5
 
 config/name="GDExtensionSummator"
 run/main_scene="res://main.tscn"
-config/features=PackedStringArray("4.0", "Vulkan Clustered")
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
