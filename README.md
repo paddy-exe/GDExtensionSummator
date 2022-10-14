@@ -5,8 +5,8 @@ The C++ code is from the [Custom modules example](https://docs.godotengine.org/e
 
 ----> **Feel free to use this repository as a template for your GDExtensions**
 
-## Using the extension
-After compiling the extension succesfully, you can now use the Summator Class inside Godot :tada:
+## :tada: Using the extension
+After compiling the extension succesfully, you can now use the Summator Class inside Godot
 ```gdscript
 func _ready() -> void:
 	var s = Summator.new()
@@ -18,17 +18,17 @@ func _ready() -> void:
 	s.reset()
 ```
 
-## Versioning
+## 🔢 Versioning
 This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
 
 ----> **Most Recent Update: Godot 4 Beta 3 working**
 
-## Contributing
+## ℹ️ Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
 
 PRs for improvements are very welcome!
 
-## Building the extension
+## ⚙️ Building the extension
 
 ### VSCode Compilation (only applicable if you are using VSCode as your code editor)
 For the initial build you can run the vscode task `initial-build-extension`. This compiles both godot-cpp and the extension. For all subsequent builds, you only need to run the task `build-extension`.
