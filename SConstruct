@@ -50,9 +50,7 @@ if env["platform"] == "macos":
     )
 else:
     library = env.SharedLibrary(
-        "game/bin/summator/libgdsummator.{}.{}.{}{}".format(
-            env["platform"], env["target"], env["arch_suffix"], env["SHLIBSUFFIX"]
-        ),
+        "game/bin/summator/libgdsummator{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 

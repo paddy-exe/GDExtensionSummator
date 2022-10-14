@@ -19,7 +19,7 @@
         {
             "label": "build-godot-cpp",
             "type": "shell",
-            "command": "scons target=debug generate_bindings=yes",
+            "command": "scons target=template_debug",
             "dependsOrder": "sequence",
             "dependsOn":["godot-cpp-dir"],
             "presentation": {
@@ -50,7 +50,7 @@
         {
             "label": "initial-build-extension",
             "type": "shell",
-            "command": "scons target=debug",
+            "command": "scons target=template_debug",
             "dependsOrder": "sequence",
             "dependsOn":["godot-cpp-dir", "build-godot-cpp", "top-level-dir"],
             "presentation": {
@@ -66,7 +66,7 @@
         {
             "label": "build-extension",
             "type": "shell",
-            "command": "scons target=debug",
+            "command": "scons target=template_debug",
             "presentation": {
                 "echo": true,
                 "revealProblems": "onProblem",
