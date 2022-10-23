@@ -31,7 +31,7 @@ int Summator::get_total() const
 
 void Summator::_bind_methods()
 {
-    ClassDB::bind_method(D_METHOD("add", "p_value"), &Summator::add);
+    ClassDB::bind_method(D_METHOD("add", "value"), &Summator::add, DEFVAL(1));
     ClassDB::bind_method(D_METHOD("reset"), &Summator::reset);
     ClassDB::bind_method(D_METHOD("get_total"), &Summator::get_total);
 }
