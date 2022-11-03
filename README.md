@@ -19,9 +19,12 @@ func _ready() -> void:
 ```
 
 ## 🔢 Versioning
-This repository is being updated regularly to work with the latest version of the master branch. If you can't compile the extension, please open an issue.
+This repository is being updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
 
-----> **Most Recent Update: Godot 4 Beta 3 working**
+----> **Most Recent Update: Godot 4 Beta 4 working**
+
+If you want to work with the latest master and godot-cpp version, check out this [GDExtension template by Nathan Franke](https://github.com/nathanfranke/gdextension).
+
 
 ## ℹ️ Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
