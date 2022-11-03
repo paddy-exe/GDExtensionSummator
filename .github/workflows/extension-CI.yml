@@ -1,0 +1,14 @@
+name: Extension Continuous Integration Build
+
+on:
+  pull-request:
+    branches: [main]
+
+jobs:
+  test-linux:
+    runs-on:  "ubuntu-latest"
+    working-directory: ./godot-cpp
+    steps:
+      run: scons target=debug generate_bindings=yes
+      run: cd ..
+      run: scons target=debug
