@@ -21,7 +21,7 @@ func _ready() -> void:
 ## 🔢 Versioning
 This repository is being updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
 
-----> **Most Recent Update: Godot 4 Beta 6 working**
+----> **Most Recent Update: Godot 4 Beta 7 working**
 
 If you want to work with the latest master and godot-cpp version, check out this [GDExtension template by Nathan Franke](https://github.com/nathanfranke/gdextension).
 
