@@ -23,7 +23,9 @@ This repository is being updated regularly to work with the latest beta release 
 
 ----> **Most Recent Update: Godot 4 Beta 8 working**
 
+## Alternative templates
 If you want to work with the latest master and godot-cpp version, check out this [GDExtension template by Nathan Franke](https://github.com/nathanfranke/gdextension).
+If you are more used to CMake than Scons you can use [this template here by asmalone](https://github.com/asmaloney/GDExtensionTemplate)
 
 
 ## ℹ️ Contributing
