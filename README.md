@@ -1,4 +1,15 @@
-# GDExtensionSummator
+# GDExtension-Summator
+<div id="badges" align="center">
+  <a href="https://ko-fi.com/flamelizard">
+    <img src="https://img.shields.io/badge/Support my work-red?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-Fi Badge"/>
+  </a>
+  <a href="https://twitter.com/patrick_exe">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+  <a href="https://mastodon.gamedev.place/@flamelizard">
+    <img src="https://img.shields.io/badge/Mastodon-purple?style=for-the-badge&logo=mastodon&logoColor=white" alt="Mastodon Badge"/>
+  </a>
+</div>
 
 This repository is for showcasing the new GDExtension system in Godot 4.
 The C++ code is from the [Custom modules example](https://docs.godotengine.org/en/latest/development/cpp/custom_modules_in_cpp.html "Click to get to the docs") of the Godot docs.
@@ -22,6 +33,9 @@ func _ready() -> void:
 This repository is being updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
 
 ----> **Most Recent Update: Godot 4 Beta 9 working**
+
+## ❓ What? How? Why?
+If you are not sure what each file in this project does or if you want to know in detail: I wrote a blog post about the purpose of each file on [my Ko-Fi page](https://ko-fi.com/post/GDExtension--Godot-SUPERCHARGED--How-to-get-star-Z8Z4GLUSE).
 
 ## Alternative templates
 If you want to work with the latest master and godot-cpp version, check out this [GDExtension template by Nathan Franke](https://github.com/nathanfranke/gdextension).
