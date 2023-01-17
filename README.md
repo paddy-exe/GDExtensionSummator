@@ -32,7 +32,7 @@ func _ready() -> void:
 ## 🔢 Versioning
 This repository is being updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
 
-----> **Most Recent Update: Godot 4 Beta 11 working**
+----> **Most Recent Update: Godot 4 Beta 12 working**
 
 ## ❓ What? How? Why?
 If you are not sure what each file in this project does or if you want to know in detail: I wrote a blog post about the purpose of each file on [my Ko-Fi page](https://ko-fi.com/post/GDExtension--Godot-SUPERCHARGED--How-to-get-star-Z8Z4GLUSE).
