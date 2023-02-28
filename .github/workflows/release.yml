@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: Release
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        id: download
+        with:
+          path: downloads
+      - name: Display structure of downloaded files
+        run: ls -R
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{steps.download.outputs.download-path}}
