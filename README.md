@@ -30,9 +30,7 @@ func _ready() -> void:
 ```
 
 ## 🔢 Versioning
-This repository is being updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
-
-----> **Most Recent Update: Godot 4 RC 6 working**
+This repository is being updated regularly to work with the latest point release of the master (4.0) branch. If you can't compile the extension, please open an issue.
 
 ## ❓ What? How? Why?
 If you are not sure what each file in this project does or if you want to know in detail: I wrote a blog post about the purpose of each file on [my Ko-Fi page](https://ko-fi.com/post/GDExtension--Godot-SUPERCHARGED--How-to-get-star-Z8Z4GLUSE).
@@ -62,7 +60,7 @@ To compile the extension you need to follow these steps:
 ```bash
 # --recursive to automatically load the submodule godot-cpp
 # The git adress can be found under the green "Code" dropdown menu
-git clone --recursive (--GITHUB ADRESS--)
+git clone (--GITHUB ADRESS--)
 ```
 
 2. Make sure you are on the right commit of the godot-cpp repository
@@ -87,10 +85,7 @@ cd godot-cpp
 ```bash
 scons target=template_debug
 # OR simpler (the above is the default configuration):
-scons 
-
-# For beta 2 and earlier:
-scons target=debug generate_bindings=yes
+scons
 ```
 
 6. Go back to the top level of the directory
@@ -103,7 +98,4 @@ cd ..
 scons target=template_debug
 # OR simpler (the above is the default configuration):
 scons
-
-# For beta 2 and earlier:
-scons target=debug
 ```
