@@ -105,10 +105,12 @@ jobs:
           path: |
             ${{ github.workspace }}/game/bin/summator/*
 
-      - name: Zip artifact
-        run: |
-          cd game/bin
-          zip -qq -r ../summator.${{ matrix.platform }}.${{ matrix.arch }}.zip summator
+      - name: Archive Release
+        uses: thedoctor0/zip-release@0.7.1
+        with:
+          type: 'zip'
+          filename: 'summator.${{ matrix.platform }}.${{ matrix.arch }}.zip'
+          path: 'summator'
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
 
       - name: Create and upload asset
