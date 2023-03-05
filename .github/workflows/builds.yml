@@ -110,7 +110,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'summator.${{ matrix.platform }}.${{ matrix.arch }}.zip'
-          path: 'summator'
+          path: '${{ github.workspace }}/game/bin/summator/'
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
 
       - name: Create and upload asset
