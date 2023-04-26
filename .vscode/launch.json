@@ -1,0 +1,73 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+			"name": "Run Demo [FROM EDITOR] - [DEBUG MODE]",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "path to the godot executable",
+			"args": [
+				"--editor",
+				"--path",
+				"${workspaceFolder}/project",
+				"--verbose",
+				"--debug",
+				"--stdout"
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "internalConsole",
+		},
+        {
+			"name": "Run Demo [FROM GAME] - [DEBUG MODE]",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "path to the godot executable",
+			"args": [
+				"--path",
+				"${workspaceFolder}/project",
+				"--verbose",
+				"--debug",
+				"--stdout"
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "internalConsole",
+		},
+        {
+			"name": "Run Demo [FROM EDITOR] - [TEST MODE]",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "path to the godot executable",
+			"args": [
+				"--editor",
+				"--path",
+				"${workspaceFolder}/project",
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "internalConsole",
+		},
+        {
+			"name": "Run Demo [FROM GAME] - [TEST MODE]",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "path to the godot executable",
+			"args": [
+				"--path",
+				"${workspaceFolder}/project",
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "internalConsole",
+		},
+    ]
+}
+

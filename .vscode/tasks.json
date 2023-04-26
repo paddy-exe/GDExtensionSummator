@@ -76,6 +76,20 @@
                 "clear": false
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-extension [dev build]", // or the pat 
+            "type": "shell",
+            "command": "scons target=template_debug dev_build=yes",
+            "presentation": {
+                "echo": true,
+                "revealProblems": "onProblem",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }
