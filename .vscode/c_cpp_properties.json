@@ -1,5 +1,5 @@
 // Try creating a custom c_cpp_properties.json file from withing vscode itself and then modify it.
-// th emost important code to add is the one conatined inside "includePath"
+// The most important code to add is the one contained inside "includePath"
 {
     "configurations": [
         {
