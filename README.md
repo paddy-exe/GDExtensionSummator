@@ -50,6 +50,9 @@ PRs for improvements are very welcome!
 ### VSCode Compilation (only applicable if you are using VSCode as your code editor)
 For the initial build you can run the vscode task `initial-build-extension`. This compiles both godot-cpp and the extension. For all subsequent builds, you only need to run the task `build-extension`.
 
+### Debugging via VSCode
+To debug your extension you can run the ``build-extension [dev build]`` command. To use this command you need to also modify your specific Godot paths inside the ``.vscode/tasks.json`` file. For further information see [here](https://github.com/paddy-exe/GDExtensionSummator/issues/50).
+
 ### Manual Compilation
 
 To compile the extension you need to follow these steps:
