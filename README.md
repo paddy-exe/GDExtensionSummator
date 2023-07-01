@@ -17,7 +17,7 @@ The C++ code is from the [Custom modules example](https://docs.godotengine.org/e
 ----> **Feel free to use this repository as a template for your GDExtensions**
 
 ## :tada: Using the extension
-After compiling the extension succesfully, you can now use the Summator Class inside Godot
+After compiling the extension successfully, you can now use the Summator Class inside Godot
 ```gdscript
 func _ready() -> void:
 	var s = Summator.new()
@@ -30,7 +30,10 @@ func _ready() -> void:
 ```
 
 ## 🔢 Versioning
-This repository is being updated regularly to work with the latest point release of the master (4.0) branch. If you can't compile the extension, please open an issue.
+This repository is being updated regularly to work with the latest point release of the master and 4.0 branches. 
+If you can't compile the extension, please open an issue.
+
+The releases are structured as ``GODOT_VERSION-EXTENSION_VERSION`` to clarify which version to use for which Godot version.
 
 ## ❓ What? How? Why?
 If you are not sure what each file in this project does or if you want to know in detail: I wrote a blog post about the purpose of each file on [my Ko-Fi page](https://ko-fi.com/post/GDExtension--Godot-SUPERCHARGED--How-to-get-star-Z8Z4GLUSE).
