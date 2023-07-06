@@ -30,7 +30,7 @@ func _ready() -> void:
 ```
 
 ## 🔢 Versioning
-This repository is being updated regularly to work with the latest point release of the master and 4.0 branches. 
+This repository is being updated regularly to work with the latest point release of the Godot branches. 
 If you can't compile the extension, please open an issue.
 
 The releases are structured as ``GODOT_VERSION-EXTENSION_VERSION`` to clarify which version to use for which Godot version.
@@ -41,7 +41,6 @@ If you are not sure what each file in this project does or if you want to know i
 ## Alternative templates
 If you want to work with the latest master and godot-cpp version, check out this [GDExtension template by Nathan Franke](https://github.com/nathanfranke/gdextension).
 If you are more used to CMake than Scons you can use [this template here by asmalone](https://github.com/asmaloney/GDExtensionTemplate)
-
 
 ## ℹ️ Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
@@ -64,15 +63,13 @@ To compile the extension you need to follow these steps:
 
 1. Clone the extension recursively from this repository
 ```bash
-# --recursive to automatically load the submodule godot-cpp
 # The git adress can be found under the green "Code" dropdown menu
-git clone (--GITHUB ADRESS--)
+git clone (--GITHUB ADRESS--) # --recursive to automatically load the submodule godot-cpp
 ```
 
 2. Make sure you are on the right commit of the godot-cpp repository
 ```bash
-git status
-# this show's you the commit. Make sure that it is released to a similar/the same time as the master branch (especially during the beta)
+git status # this show's you the commit. Make sure that it has the correct commit for the release you are targeting
 ```
 To make sure you have the right commit, here the [link to the pinned updated issue with the commit hashes](https://github.com/godotengine/godot-cpp/issues/874)
 
@@ -89,9 +86,7 @@ cd godot-cpp
 
 5. Compile godot-cpp and generate the bindings (only needed once when starting development or when there is an update of the submodule)
 ```bash
-scons target=template_debug
-# OR simpler (the above is the default configuration):
-scons
+scons # this will use the default values such as target=template_debug
 ```
 
 6. Go back to the top level of the directory
@@ -101,7 +96,5 @@ cd ..
 
 7. Compile the extension
 ```bash
-scons target=template_debug
-# OR simpler (the above is the default configuration):
-scons
+scons # this will use the default values such as target=template_debug
 ```
