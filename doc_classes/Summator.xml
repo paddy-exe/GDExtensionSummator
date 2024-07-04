@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Summator" inherits="RefCounted" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		Very short and brief description.
+	</brief_description>
+	<description>
+		This is a very long description. You can use [b]bold[/b], [i]italic[/i], [u]underlined[/u], [code]code[/code] and other cool things supported by BBCode tags.
+	</description>
+	<tutorials>
+		<link title="Summator Module Docs">https://docs.godotengine.org/en/stable/contributing/development/core_and_modules/custom_modules_in_cpp.html</link>
+		<link title="GDExtensionSummator GitHub">https://github.com/paddy-exe/GDExtensionSummator</link>
+	</tutorials>
+	<methods>
+		<method name="add">
+			<return type="void" />
+			<param index="0" name="value" type="int" default="1" />
+			<description>
+				Add value to the Summator instance.
+			</description>
+		</method>
+		<method name="get_total" qualifiers="const">
+			<return type="int" />
+			<description>
+				Returns the total amount saved in the Summator instance.
+			</description>
+		</method>
+		<method name="reset">
+			<return type="void" />
+			<description>
+				Resets the amount of the Summator instance to zero.
+			</description>
+		</method>
+	</methods>
+</class>
